@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Patipon's NextJS Resume</title>
         <meta name="description" content="My Next.JS Resume" />
@@ -18,13 +18,7 @@ export default function Home() {
 
 
       <Layout home/>
-
-      
-
-    
-
-
-      
-    </div>
+ 
+    </>
   )
 }

@@ -22,7 +22,7 @@ export default function Cards() {
                 <Meta title={project[1].title} />
 
                 <Button type="primary" size="large" className={styles.button}>
-                  <Link href="/projects/[project]" as={"/projects/" + project[0]} className={styles.button}>
+                  <Link href="/projects/[project]" as={"/projects/" + project[0]}>
                     <a>View More</a>
                   </Link>
                 </Button>

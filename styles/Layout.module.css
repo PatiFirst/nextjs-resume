@@ -76,7 +76,7 @@
 }
 
 .button{
-    margin-top: 24px;
+    margin: 24px 0px;
 }
 
 @media (max-width: 1024px) {

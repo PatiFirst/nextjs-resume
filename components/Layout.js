@@ -2,7 +2,9 @@ import React from "react";
 import styles from "../styles/Layout.module.css";
 import Image from "next/image";
 import Cards from "./Cards"
-import Project from "../pages/projects/[project]";
+import { Button } from "antd";
+import Link from "next/link"
+
 
 export default function Layout({ children, home }) {
   return (
@@ -98,6 +100,12 @@ export default function Layout({ children, home }) {
                </div>
           ) : (
                <>
+                    <Button type="primary" danger size="large" className={styles.button}>
+                         <Link href="/">
+                              <a>Back</a>
+                         </Link>
+                    </Button>
+
                     {children}
                </>
           )}

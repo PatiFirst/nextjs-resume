@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Patipon's NextJS Resume</title>
-        <meta name="description" content="My Next.JS Resume" />
+        <title>NextJS Resume</title>
+        <meta name="description" content="My NextJS Resume" />
       </Head>
 
 

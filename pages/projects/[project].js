@@ -41,6 +41,7 @@ const Project = (props) => {
                             images.map((image, index) => {
                                 return(
                                         <Image
+                                            property
                                             key={index}
                                             style={{marginRight: 20}}
                                             width={200}

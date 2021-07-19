@@ -3,6 +3,7 @@ import Meta from "antd/lib/card/Meta";
 import styles from "../styles/Layout.module.css"
 import Link from "next/link"
 import projects from "../pages/data/allProject.json"
+import Image from "next/image"
 
 export default function Cards() {
 
@@ -15,8 +16,15 @@ export default function Cards() {
               <Card
                 hoverable
                 style={{ width: 300 }}
-                cover={<img alt={project[1].title} src={project[1].image[0]} 
-                />}
+                cover={
+                  <Image
+                    style={{marginRight: 20}}
+                    width={200}
+                    height={200}
+                    src={project[1].image[0]}
+                    alt={project[1].title}
+                  />
+                }
               >
                 <Meta title={project[1].title} />
 
@@ -32,24 +40,7 @@ export default function Cards() {
 
         })
       }
-
-    
-      {/* <Card
-        hoverable
-        style={{ width: 300 }}
-        cover={<img alt="ShirBand" src="./images/ShirBand.jpg" />}
-      >
-        <Meta title="ShirBand" />
-        <Button type="primary" size="large" className={styles.button}>
-          View More
-        </Button>
-      </Card> */}
     </>
   );
 }
 
-// export async function getStaticProps(){
-
-//   const project = await fetch("../pages/data/allProject.js")
-
-// }

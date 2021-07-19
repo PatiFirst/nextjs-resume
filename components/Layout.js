@@ -7,6 +7,7 @@ import Link from "next/link"
 
 
 export default function Layout({ children, home }) {
+
   return (
     <main className={styles.container}>
           {home ? (
@@ -20,16 +21,15 @@ export default function Layout({ children, home }) {
                     <h2>Personal Information</h2>
 
                     <p>
-                         I'm a third-year student and studying{" "}
+                         I am a third-year student and studying
                          <span className={styles.bold}>Media Technology</span> at
                          <span className={styles.bold}>
-                         {" "}
-                         King Mongkut's University of Technology Thonburi.
+                              KMUTT.
                          </span>
                     </p>
                     <p>
-                         I am interested in "front-end web development" and "interactive
-                         development" and I would like to develop my skills to have
+                         I am interested in front-end web development and interactive
+                         development and I would like to develop my skills to have
                          knowledge and experience from this internship.
                     </p>
 

@@ -2,7 +2,6 @@ import { Button, Card} from "antd";
 import Meta from "antd/lib/card/Meta";
 import styles from "../styles/Layout.module.css"
 import Link from "next/link"
-// import projects from "../pages/data/allProject"
 import projects from "../pages/data/allProject.json"
 
 export default function Cards() {
